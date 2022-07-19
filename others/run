@@ -1,0 +1,6 @@
+filename="${1%.*}"
+
+g++ $1 -o $filename
+
+./$filename
+rm -f $filename
